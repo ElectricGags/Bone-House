@@ -3,7 +3,7 @@
 <head>
 	<!-- TITLE IS THE INFORMATION ON THE TAB OR WINDOW-->
 	<title>
-		Welcome to Bone House - Bone-House.com - FREE TITIES - HD FULL MOVIE - 100% LEGIT CAR INSURANCE - NO BULL - ED PILLS - CLOUD PEOPLE - FUN TIMES IN CLEVELAND - MUCK FICHIGAN - SOUTHSIDE IRISH - ROB FORD FOR PM -
+		Welcome to Bone House - Bone-House.com - FREE TITIES - HD FULL MOVIE - 100% LEGIT CAR INSURANCE - NO BULL - ED PILLS - CLOUD PEOPLE - FUN TIMES IN CLEVELAND - MUCK FICHIGAN - SOUTHSIDE IRISH - ROB FORD FOR PM - KEEP PORTLAND WEIRD
 	</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,26 +25,57 @@
 			text-align: center;
 		}
 
-		/* Style the top navigation bar */
-		.topnav {
-			overflow: hidden;
-			background-color: #000000;
+		/* Style The Dropdown Button */
+		.dropdown {
+		  background-color: black;
+		  color: #00ff00;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		  cursor: pointer;
 		}
 
-		/* Style the topnav links */
-		.topnav a {
-			float: left;
-			display: block;
-			color: #00FF00;
+		.dropdown a, .dropdown {
+			display: inline-block;
+			color: #00ff00;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
 		}
 
-		/* Change color on hover */
-		.topnav a:hover {
-			background-color: #0000FF;
-			color: orange;
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #00ff00;
+		  z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.dropdown:hover .dropbtn {
+		  background-color: green;
 		}
 
 		/* Create three unequal columns that floats next to each other */
@@ -70,7 +101,7 @@
 			clear: both;
 		}
 
-		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		/* Responsive layout - makes the two columns stack next to each other instead of below each other*/
 		@media screen and (max-width: 600px) {
 			.column.side, .column.middle {
 				width: 100%;
@@ -94,12 +125,34 @@
   <p>"HOME OF THE BIGGEST SHADY LINK THIS SIDE OF THE RIOGRANDE"</p> <!-- SLOGAN UNDERNEATH (THIS SHOULD EVENTUALLY HAVE THE JAVA SCRIPT TO CHANGE THE TEXT)-->
 </div>
 
-<div class="topnav"> <!-- NAVIGATION BAR (CODE TO ADD ADDITIONAL IS IN THE NEXT COMMENT)--> <!-- <a href="URL.html">TITLE TEXT</a> -->
-  <a href="topmeme.html">TOP MEMES</a>
-  <a href="posts.html">POSTS</a>
-  <a href="social.html">SOCIAL</a>
-  <a href="no.html">FREE HOT NUDES</a>
-  <a href="soon.html">COMING SOON TO A THEATER NEAR YOU</a>
+<div class="dropdown">
+	<a href="home.html">HOME</a>
+</div>
+
+<div class="dropdown"> <!-- NAVIGATION BAR (CODE TO ADD ADDITIONAL IS IN THE NEXT COMMENT)--> <!-- <a href="URL.html">TITLE TEXT</a> -->
+  <button class="dropdown">"CONTENT"</button>
+	<div class="dropdown-content">
+		<a href="topmeme.html">TOP MEMES</a>
+  	<a href="posts.html">POSTS</a>
+		<a href="/r+d/r+d.html">RESEARCH AND DEVELOPEMENT</a>
+	</div>
+</div>
+
+<div class="dropdown">
+	<button class="dropdown">SOCIAL</button>
+	<div class="dropdown-content">
+  	<a href="social.html">SOCIAL</a>
+	</div>
+</div>
+
+<div class="dropdown">
+	<button class="dropdown">SPICY "CONTENT"</button>
+	<div class="dropdown-content">
+		<a href="no.html">HOT NUDES</a>
+		<a href="soon.html">COMING SOON TO A THEATER NEAR YOU</a>
+		<a href="nosey.html">CRAIGSLIST PERSONALS</a>
+		<a href="fanfiction.html">USER CREATED FAN FICTON</a>
+	</div>
   <a href="about.html">ABOUT US</a>
 </div>
 
@@ -142,7 +195,8 @@
 
 		<p>
 			DISCLAIMER: Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.
-			<br> If you have any questions or concerns please voice them at (202) 224-5922.
+			<br>
+			<br>If you have any questions or concerns please voice them at (202) 224-5922.
 		</p>
 	</center>
 
